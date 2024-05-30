@@ -28,9 +28,9 @@ def format_datetime(input_datetime_str):
 
 def data_out(duong_link = False , tac_gia = False , tieu_de=False, loai = 'kho',so_hieu=False,mo_ta= False , nam_ban_hanh= False , wki_id=False,linh_vuc= False , trang_thai = 'con_hieu_luc', lih_vuc=False, tu_khoa=False, status_code=False, action_type=False, link_file=False, name_file=False):
     data = {
-        "tiêu đề": tieu_de,
-        "số hiệu": so_hieu,
-        "nam_ban_hanh": nam_ban_hanh,
+        "ten_tieng_anh": tieu_de,
+        "so_hieu": so_hieu,
+        "nam_ban_hanh": format_datetime(nam_ban_hanh),
         "wki_id": wki_id,
         "lĩnh vực": lih_vuc,
         "từ khóa": tu_khoa,
@@ -774,7 +774,7 @@ def fetch_standard_data(url):
                 descriptions = description[2].get_text(strip=True) if len(description) > 2 else 'n/a'
                 date_pub = soup.select_one('.released').get_text(strip=True)
                 
-                standards.append(data_out(ten_tieng_anh=title, mo_ta=descriptions, nam_ban_hanh=date_pub))
+                standards.append(data_out(ten_tieng_anh=title, mo_ta=descriptions))
                 time.sleep(3)
             except requests.RequestException as e:
                 print(f"Error fetching standard data for link {link}: {e}")
