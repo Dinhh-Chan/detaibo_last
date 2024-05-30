@@ -1,0 +1,226 @@
+{
+    "ITS": {
+        "total_count": 5,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-24&harmonized=0&keyword=&TB=620,,702,,707,,708,,709,,710,,711&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Broad_Cable_Access": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=733,,786&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Broadband_Wireless_Access": {
+        "total_count": 3,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=287&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "DECT": {
+        "total_count": 5,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=19,,276,,277,,278,,279,,280,,281,,515,,392,,672,,752,,855&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Fixed_line_Access": {
+        "total_count": 7,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=516,,518,,519,,517,,638,,602,,2,,494,,3,,4,,5,,689,,693,,733,,694,,695&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Mobile_and_Private_Mobile_Radio": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=Digital&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=dPMR,,PMR&TB=&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "xDSL": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=xdsl&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=695&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Codes": {
+        "total_count": 42,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=387,,181&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "eHEALTH": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=696,,586&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Energy_efficiency_and_environmental_aspects": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=energy&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=689,,635,,773&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Human_factor_and_accessibility": {
+        "total_count": 3,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=80,,81,,82,,83&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Lawful_Interception_for_Mobile": {
+        "total_count": 2,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=lawful%2Binterception&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=386,,180&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Quality_of_Service": {
+        "total_count": 4,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=QoS&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Safety": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=362,,432&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Smart_cities": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=smart%2Bcit&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Smart_Grids": {
+        "total_count": 2,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=Smart&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=787,,765,,470,,726&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Smart_Metering": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=smart%2Bmetering&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Broadcast": {
+        "total_count": 8,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=92&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "ENI": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=857&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "F5G": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=885&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Fixed_Radio_links": {
+        "total_count": 3,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=694,,235,,236,,237,,274&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "IPE": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=892&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "MEC": {
+        "total_count": 2,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=826,,835&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Network_functions_Virtualisation": {
+        "total_count": 6,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=826,,835,,833,,789,,832,,831,,795,,796,,800,,798,,799,,848,,797,,828&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "NIN": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=844,,887&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Reconfigurable_Intelegnt_Surfaces": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=900&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Smart_Body_Area_Networks": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=804&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "ZSM": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=862&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Broadband_Statelite_Multimedia": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=Broadband%2BSatellite%2BMultimedia&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "DVB": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=satellite&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=92&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Electro_Magnetic_Compatibilty": {
+        "total_count": 5,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=EMC&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Galilieo": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=Galileo&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Maritime": {
+        "total_count": 2,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=582&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Medical_device": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=696,,586&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Mobile_communications": {
+        "total_count": 122,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=372,,376,,377,,378,,513,,496,,439,,649,,651,,653,,654,,655,,656,,535,,536,,537,,538,,622,,539,,575,,373,,379,,380,,3&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Radio": {
+        "total_count": 13,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=286,,807,,544,,442,,526,,552,,584,,586,,596,,620,,811,,846,,624,,582,,598,,729,,304,,305&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Radio_LAN": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=LAN&TB=4,,287,,336,,286,,326,,329,,330,,327,,331,,328,,442,,356,,371,,304,,305&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "RT": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=549,,736,,841&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Reconfigurable_Radio": {
+        "total_count": 2,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=Reconfigurable%2Bradio&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=146,,713,,718,,719,,720,,721&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Satellite_Communication": {
+        "total_count": 8,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=162,,164,,165,,166,,167,,483,,569,,540,,482,,479,,478,,476,,477,,600,,481,,704,,676,,757,,650,,480&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Satellite_for_UMTS": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=UMTS%2FIMT-2000&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Secure_Elements": {
+        "total_count": 7,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=534,,639,,640,,714&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Short_Range_Devices": {
+        "total_count": 4,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=SRD&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "THz": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=908&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "SIM": {
+        "total_count": 14,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=656,,534,,639,,640,,714&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "TETRA": {
+        "total_count": 7,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=218,,244,,245,,246,,543,,248,,249,,250,,441,,247&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Ultra_Wide_Band": {
+        "total_count": 2,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=UWB&TB=&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "IoT": {
+        "total_count": 4,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=IoT&TB=&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Cybersecurity": {
+        "total_count": 2,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=824,,755&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Digital_Signature": {
+        "total_count": 5,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=607&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "LI": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=608&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "QKD": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=723&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "QSC": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=856,,836&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "SAI": {
+        "total_count": 1,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=877&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Security": {
+        "total_count": 15,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=824,,784,,607,,755,,608,,160,,161,,504,,503,,534,,639,,640,,714&stdType=&frequency=&mandate=&collection=&sort=1"
+    },
+    "Security_algorithms": {
+        "total_count": 11,
+        "url": "https://www.etsi.org/?option=com_standardssearch&view=data&format=json&page={page}&search=algorithm&title=1&etsiNumber=1&content=0&version=0&onApproval=1&published=1&withdrawn=1&historical=1&isCurrent=1&superseded=1&startDate=1988-01-15&endDate=2024-05-25&harmonized=0&keyword=&TB=&stdType=&frequency=&mandate=&collection=&sort=1"
+    }
+}
