@@ -42,7 +42,7 @@ def get(url):
         author = soup.find(id = 'pub-authors-container').get_text(strip=True)
         tenfile = links_download.split('/')[-1]
         data_out(tieu_de= header_text , so_hieu= statuss, link_download= links_download , ten_file= tenfile,athor= author, date_pub=date_pub, keyword=keyword, abstract=abstract)
-        standard.append(data_out)
+        standard.append(data_out(tieu_de= header_text , so_hieu= statuss, link_download= links_download , ten_file= tenfile,athor= author, date_pub=date_pub, keyword=keyword, abstract=abstract))
     return standard
 get("https://csrc.nist.gov/publications/fips")
 

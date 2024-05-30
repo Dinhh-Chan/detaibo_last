@@ -4,7 +4,7 @@ import logging
 
 _logger = logging.getLogger(__name__)
 
-JSON_PATH ='check_json_template.json'
+JSON_PATH ='check_json.json'
 
 def get():
     try:
@@ -16,6 +16,7 @@ def get():
                 if key != "meeting_laision" and key!= 'meeting_meeting' and key != 'publication' and key !="recommendation" :
                     if value !=0:
                         result = result + (getattr(crawler,key)(value))
+                        
                         data[key] = value - 1
                         open(JSON_PATH,'w').write(json.dumps(data))
                         return result

@@ -9,6 +9,8 @@ import time
 _logger = logging.getLogger(__name__)
 
 def format_datetime(input_datetime_str):
+    if input_datetime_str == False :
+        return False
     input_formats = [
         "%Y-%m-%dT%H:%M:%S",
         "%y-%m-%dT%H:%M:%S",
@@ -26,16 +28,14 @@ def format_datetime(input_datetime_str):
             continue
     return input_datetime_str
 
-def data_out(duong_link = False , tac_gia = False , tieu_de=False, loai = 'kho',so_hieu=False,mo_ta= False , nam_ban_hanh= False , wki_id=False,linh_vuc= False , trang_thai = 'con_hieu_luc', lih_vuc=False, tu_khoa=False, status_code=False, action_type=False, link_file=False, name_file=False):
+def data_out(duong_link = False , tac_gia = False , ten_tieng_anh=False, loai = 'kho',so_hieu=False,mo_ta= False , nam_ban_hanh= False , wki_id=False,linh_vuc= False , trang_thai = 'con_hieu_luc',  tu_khoa=False,  action_type=False, link_file=False, name_file=False):
     data = {
-        "ten_tieng_anh": tieu_de,
+        "ten_tieng_anh": ten_tieng_anh,
         "so_hieu": so_hieu,
         "nam_ban_hanh": format_datetime(nam_ban_hanh),
         "wki_id": wki_id,
-        "lĩnh vực": lih_vuc,
         "từ khóa": tu_khoa,
         "trang_thai": trang_thai,
-        "status_code": status_code,
         "action_type": action_type,
         "đường link file": link_file,
         "tên file": name_file,
@@ -47,37 +47,42 @@ def data_out(duong_link = False , tac_gia = False , tieu_de=False, loai = 'kho',
     }
     return data
 def iso(page):
-    URL = "https://jcl49wv5ar-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(4.22.1)%3B%20Browser%20(lite)%3B%20instantsearch.js%20(4.64.3)%3B%20JS%20Helper%20(3.16.2)&x-algolia-api-key=MzcxYjJlODU3ZmEwYmRhZTc0NTZlODNlZmUwYzVjNDRiZDEzMzRjMjYwNTAwODU3YmIzNjEwZmNjNDFlOTBjYXJlc3RyaWN0SW5kaWNlcz1QUk9EX2lzb29yZ19lbiUyQ1BST0RfaXNvb3JnX2VuX2F1dG9jb21wbGV0ZQ%3D%3D&x-algolia-application-id=JCL49WV5AR"
-    data = []
-    if page == 0 :
-        return []
-    links=[]
-    json_data = {
-                    "requests": [
-                        {
-                            "indexName": "PROD_isoorg_en",
-                            "params": f"clickAnalytics=true&facetFilters=%5B%5B%22facet%3Astandard%22%5D%5D&facets=%5B%22facet%22%5D&highlightPostTag=__%2Fais-highlight__&highlightPreTag=__ais-highlight__&maxValuesPerFacet=10&page={page}&query=iec&tagFilters=&userToken=anonymous-091345c9-5a26-40a9-b501-3bcf5177ba7d"
-                        }
-                    ]
-                }
-    r = requests.post(url=URL, json=json_data)
+    try:
+        URL = "https://jcl49wv5ar-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(4.22.1)%3B%20Browser%20(lite)%3B%20instantsearch.js%20(4.64.3)%3B%20JS%20Helper%20(3.16.2)&x-algolia-api-key=MzcxYjJlODU3ZmEwYmRhZTc0NTZlODNlZmUwYzVjNDRiZDEzMzRjMjYwNTAwODU3YmIzNjEwZmNjNDFlOTBjYXJlc3RyaWN0SW5kaWNlcz1QUk9EX2lzb29yZ19lbiUyQ1BST0RfaXNvb3JnX2VuX2F1dG9jb21wbGV0ZQ%3D%3D&x-algolia-application-id=JCL49WV5AR"
+        data = []
+        if page == 0 :
+            return []
+        links=[]
+        json_data = {
+                        "requests": [
+                            {
+                                "indexName": "PROD_isoorg_en",
+                                "params": f"clickAnalytics=true&facetFilters=%5B%5B%22facet%3Astandard%22%5D%5D&facets=%5B%22facet%22%5D&highlightPostTag=__%2Fais-highlight__&highlightPreTag=__ais-highlight__&maxValuesPerFacet=10&page={page}&query=iec&tagFilters=&userToken=anonymous-091345c9-5a26-40a9-b501-3bcf5177ba7d"
+                            }
+                        ]
+                    }
+        r = requests.post(url=URL, json=json_data)
 
-                # extracting data in json format
-    data = r.json()['results'][0]['hits']
-    for i in data:
-        # standard = {
-        #         "so_hieu": i['reference'],
-        #         "Ten tieu chuan" : i["title"],
-        #         "nam_ban_hanh": i['lastIndexation'],
-        #         "duong_link": "https://www.iso.org/"+ i['seoURL'],
-        #         "Trang thai":i['statusKey'],
-        #         "File tieu chuan": "N/A",
-        #         "Hieu luc": "con_hieu_luc",
-            
-        #         }
-        standard = data_out(so_hieu=i['reference'], ten_tieng_anh=i["title"], nam_ban_hanh= i['lastIndexation'], duong_link="https://www.iso.org/"+ i['seoURL'], mo_ta= i.get('text') if 'text' in i else False ,linh_vuc=False )
-        links.append(standard)
-    return links
+                    # extracting data in json format
+        data = r.json()['results'][0]['hits']
+        for i in data:
+            # standard = {
+            #         "so_hieu": i['reference'],
+            #         "Ten tieu chuan" : i["title"],
+            #         "nam_ban_hanh": i['lastIndexation'],
+            #         "duong_link": "https://www.iso.org/"+ i['seoURL'],
+            #         "Trang thai":i['statusKey'],
+            #         "File tieu chuan": "N/A",
+            #         "Hieu luc": "con_hieu_luc",
+                
+            #         }
+            standard = data_out(so_hieu=i['reference'], ten_tieng_anh=i["title"], nam_ban_hanh= i['lastIndexation'], duong_link="https://www.iso.org/"+ i['seoURL'], mo_ta= i.get('text') if 'text' in i else False ,linh_vuc=False )
+            links.append(standard)
+        return links
+    except Exception as e:
+        _logger.error(e)
+        return []
+
 def publication(page):
     url = "https://www.itu.int/net4/ITU-T/search/GlobalSearch/RunSearch"
     arr_standard = []
@@ -558,7 +563,7 @@ def standard(url):
             author = author.get_text(strip = True)
         else :
             author ='0'
-        standard.append(data_out(so_hieu= so_hieu, ten_tieng_anh=ten_tieng_anh,gia = price,mo_ta=abstract, duong_link=duong_link, tac_gia= author))
+        standard.append(data_out(so_hieu= so_hieu, ten_tieng_anh=ten_tieng_anh,mo_ta=abstract, duong_link=duong_link, tac_gia= author))
     return standard
 def Construction_Construction_Safety(page):
     url = "https://webstore.ansi.org/packages/construction"
@@ -836,34 +841,40 @@ def ieee(page):
 #ETSI
 
 def download_pdf(url, file_name):
+    pass
     response = requests.get(url)
     with open(file_name, 'wb') as file:
         file.write(response.content)
 
 def fetch_standards_etsi(page, url_template):
+    print(1)
     standard = []
     url = url_template.format(page=page)
     try:
+        print(1)
         response = requests.get(url)
+        print(1)
         if response.status_code == 200:
             datas = response.json()
             for data in datas:
+                print(data)
                 link_data = "https://www.etsi.org/deliver/" + data["EDSpathname"].replace('\\', '') + data["EDSPDFfilename"]
-                # print(link_data)
-                download_pdf(link_data, data["ETSI_DELIVERABLE"])
+                # download_pdf(link_data, data["ETSI_DELIVERABLE"])
+                
+                print(1)
                 standard.append(data_out(
-                    tieu_de=data["TITLE"],
-                    so_hieu=data["ETSI_DELIVERABLE"],
-                    wki_id=data["wki_id"],
-                    linh_vuc=["TB"],
-                    tu_khoa=["Keywords"],
-                    status_code=["STATUS_CODE"],
-                    action_type=["ACTION_TYPE"],
+                    ten_tieng_anh=data["TITLE"],
+                    so_hieu=data["ETSI_DELIVERABLE"], 
+                    linh_vuc=data["TB"],
+                    tu_khoa=data["Keywords"],
+                    action_type=data["ACTION_TYPE"],
                     link_file=link_data,
                     name_file=data["EDSPDFfilename"]
                 ))
                 
             return standard
+        else :
+            return []
     except Exception as e:
         print(e)
         return standard
@@ -1052,6 +1063,7 @@ def Security_algorithms(page):
 
 #NIST
 def NIST(page):
+    a =page
     url ="https://csrc.nist.gov/publications/fips"
     resonpse = requests.get(url)
     link_arr_standard = []
@@ -1064,7 +1076,6 @@ def NIST(page):
         # Hiển thị các liên kết đã trích xuất
         for link in links:
             link_arr_standard.append("https://csrc.nist.gov/"+ link)
-    standard=[]
     for link in link_arr_standard: 
         resonpse = requests.get(link)
         soup = BeautifulSoup(resonpse.text, 'html.parser')
@@ -1073,11 +1084,10 @@ def NIST(page):
         abstract = soup.find(id='pub-detail-abstract-info').get_text(strip= True )
         keyword = soup.find(id = 'pub-keywords-container').get_text(strip= True)
         statuss = soup.find_all('small')
-        status = status[len(statuss)-1].get_text(strip = True)
+        status = statuss[len(statuss)-1].get_text(strip = True)
         links_download = soup.find(id = 'pub-local-download-link').get('href')
         author = soup.find(id = 'pub-authors-container').get_text(strip=True)
         tenfile = links_download.split('/')[-1]
-        data_out(tieu_de= header_text , so_hieu= statuss, link_download= links_download , ten_file= tenfile,athor= author, date_pub=date_pub, keyword=keyword, abstract=abstract)
-        standard.append(data_out)
+        standard.append(data_out(ten_tieng_anh= header_text , so_hieu= False , link_file= links_download , name_file= tenfile,tac_gia= author, nam_ban_hanh=date_pub, tu_khoa=keyword, mo_ta=abstract))
     return standard
 
