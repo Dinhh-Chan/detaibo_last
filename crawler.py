@@ -847,21 +847,18 @@ def download_pdf(url, file_name):
         file.write(response.content)
 
 def fetch_standards_etsi(page, url_template):
-    print(1)
+  
     standard = []
     url = url_template.format(page=page)
     try:
-        print(1)
+       
         response = requests.get(url)
-        print(1)
+        
         if response.status_code == 200:
             datas = response.json()
             for data in datas:
-                print(data)
                 link_data = "https://www.etsi.org/deliver/" + data["EDSpathname"].replace('\\', '') + data["EDSPDFfilename"]
                 # download_pdf(link_data, data["ETSI_DELIVERABLE"])
-                
-                print(1)
                 standard.append(data_out(
                     ten_tieng_anh=data["TITLE"],
                     so_hieu=data["ETSI_DELIVERABLE"], 
