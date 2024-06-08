@@ -4,7 +4,7 @@ import logging
 
 _logger = logging.getLogger(__name__)
 
-JSON_PATH ='check_json.json'
+JSON_PATH ='check_3.json'
 
 def get():
     try:

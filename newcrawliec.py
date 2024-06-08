@@ -1,4 +1,130 @@
-all_link =[
+from bs4 import BeautifulSoup 
+import requests
+import datetime
+import openpyxl
+from openpyxl import load_workbook
+from collections import namedtuple
+import json
+import pandas as pd 
+def format_datetime(input_datetime_str):
+    if input_datetime_str == False :
+        return False
+    input_formats = [
+        "%Y-%m-%dT%H:%M:%S",
+        "%y-%m-%dT%H:%M:%S",
+        "%B, %Y",
+    ]
+    output_format = "%Y-%m-%d %H:%M:%S"
+    for input_format in input_formats:
+        try:
+            datetime_obj = datetime.datetime.strptime(input_datetime_str, input_format)
+            if input_format == "%B, %Y":
+                datetime_obj = datetime_obj.replace(day=1, hour=0, minute=0, second=0)
+                formatted_datetime_str = datetime_obj.strftime(output_format)
+            return datetime_obj
+        except ValueError:
+            continue
+    return input_datetime_str
+def data_out(trees = False , Corrigenda_IS= False ,language= False , edition = False , duong_link = False , tac_gia = False , ten_tieng_anh=False, loai = 'kho',so_hieu=False,mo_ta= False , nam_ban_hanh= False , wki_id=False,linh_vuc= False , trang_thai = 'con_hieu_luc',  tu_khoa=False,  action_type=False, link_file=False, name_file=False):
+    data = {
+        "ten_tieng_anh": ten_tieng_anh.strip() if ten_tieng_anh else False,
+        "so_hieu": so_hieu.strip() if ten_tieng_anh else False,
+        "nam_ban_hanh": format_datetime(nam_ban_hanh),
+        "wki_id": wki_id,
+        "từ khóa": tu_khoa,
+        "trang_thai": trang_thai,
+        "action_type": action_type,
+        "đường link file": link_file,
+        "tên file": name_file,
+        'linh_vuc':linh_vuc,
+        'mo_ta':mo_ta,
+        'loai':loai,
+        'duong_link': duong_link, 
+        'tac_gia': tac_gia, 
+        'edition': edition,
+        'language': language,
+        'Corrigenda_IS': Corrigenda_IS,
+        "tree": trees
+    }
+    return data 
+def download_file_iec(url, output):
+    try :
+        response = requests.get(url)
+        if response.status_code == 200:
+            with open(output, 'wb') as file :
+                file.write(response.content)
+        else :
+            print('error')
+    except Exception as e : 
+        print(e)
+def fetch_excel_file_iec(path, tree):
+    try:
+        # Đọc tệp XML và phân tích cú pháp thành DataFrame của pandas
+        with open(path, 'r', encoding='utf-8') as file:
+            content = file.read()
+        
+        # Sử dụng BeautifulSoup để phân tích cú pháp nội dung XML
+        soup = BeautifulSoup(content, 'xml')
+        # print(soup)
+        
+        # Tìm tất cả các hàng dữ liệu
+        rows = soup.find_all('Row')[2:]  # Bỏ qua hàng tiêu đề và hàng mô tả
+        # print(rows)
+        data = []
+        for row in rows:
+            cells = row.find_all('Cell')
+            # print(cells)
+            row_data = [cell.find('Data').get_text() if cell.find('Data') else False  for cell in cells]
+            # print(row_data)
+            data.append(row_data)
+
+        # # Chuyển đổi dữ liệu thành DataFrame
+        columns = ['Reference', 'Edition', 'Corrigenda/IS', 'Date', 'Title', 'Language', 'Description']
+        df = pd.DataFrame(data, columns=columns)
+        # print(df)
+        # # Đổi tên các cột cho khớp với cấu trúc dữ liệu mong muốn
+        columns_mapping = {
+            "Reference": "so_hieu",
+            "Edition": "edition",
+            "Corrigenda/IS": "Corrigenda_IS",
+            "Title": "ten_tieng_anh",
+            "Language": "language",
+            "Description": "mo_ta",
+            "Date": "nam_ban_hanh"
+        }
+        df.rename(columns=columns_mapping, inplace=True)
+        # print(df)
+        standard = []
+
+        # # Duyệt qua các hàng trong DataFrame và tạo đối tượng data_out
+        for _, row in df.iterrows():
+            print(row["so_hieu"] )
+            datas = data_out(
+                Corrigenda_IS=row["Corrigenda_IS"] if pd.notna(row["Corrigenda_IS"]) else False,
+                language=row["language"] if pd.notna(row["language"]) else False,
+                edition=row["edition"] if pd.notna(row["edition"]) else False,
+                mo_ta=row["mo_ta"] if pd.notna(row["mo_ta"]) else False,
+                ten_tieng_anh=row["ten_tieng_anh"] if pd.notna(row["ten_tieng_anh"]) else False,
+                so_hieu=row["so_hieu"] if pd.notna(row["so_hieu"]) else False,
+                nam_ban_hanh=row["nam_ban_hanh"] if pd.notna(row["nam_ban_hanh"]) else False,
+                trees=tree
+            )
+            print(datas)
+            standard.append(datas)
+        # print(standard )
+        # return standard
+
+    except FileNotFoundError:
+        print("Lỗi: Không tìm thấy tệp.")
+    except ValueError as ve:
+        print(f"Lỗi: {ve}")
+    except Exception as e:
+        print(f"Đã xảy ra lỗi: {e}")
+
+        print(f"Đã xảy ra lỗi: {e}")
+
+def iec(page):
+    all_link =[
     {
         "TC_1": "https://www.iec.ch/dyn/www/f?p=103:22:0::::FSP_ORG_ID:1231"
     },
@@ -648,4 +774,55 @@ all_link =[
         "ISO/IEC_JTC_1/SC_42": "https://www.iec.ch/dyn/www/f?p=103:7:0::::FSP_ORG_ID:21538"
     }
 ]   
-print(len(all_link))
+    url_and_path = all_link[page]
+    url = next(iter(url_and_path.values()))
+    path = next(iter(url_and_path.keys()))
+    response= requests.get(url)
+    soup = BeautifulSoup(response.content , 'html.parser')
+    div_tag = soup.find('div', class_='dash-thread')
+
+# Nếu tìm thấy thẻ <div>, tìm thẻ <a> bên trong thẻ <div>
+    if div_tag:
+        a_tag = div_tag.find('a', href=True)
+        if a_tag:
+            # Lấy giá trị của thuộc tính href
+            href_value = a_tag['href']
+            # Trích xuất chuỗi cần thiết từ href_value
+            start = href_value.find('f?p=')
+            if start != -1:
+                end = href_value.find("'", start)
+                if end != -1:
+                    extracted_value = href_value[start:end]
+                else:
+                    extracted_value = href_value[start:]
+            else:
+                extracted_value = None
+        else:
+            extracted_value = None
+    else:
+        extracted_value = None
+
+    if extracted_value:
+        download_url = "https://www.iec.ch/dyn/www/" + extracted_value
+        print(path +".xlsx")
+        download_file_iec(download_url, path + ".xlsx")
+        standard = fetch_excel_file_iec(path + ".xlsx", "IEC[RIPT]" + path)
+        return standard
+    else:
+        print("Lỗi: Không tìm thấy giá trị hợp lệ trong thẻ href.")
+        return None
+print(iec(62))
+    
+    
+
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        

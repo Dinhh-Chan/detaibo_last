@@ -30,6 +30,7 @@ def get(url):
             link_arr_standard.append("https://csrc.nist.gov/"+ link)
     standard=[]
     for link in link_arr_standard: 
+        print(link)
         resonpse = requests.get(link)
         soup = BeautifulSoup(resonpse.text, 'html.parser')
         header_text = soup.find(id ='pub-header-display-container').get_text(strip= True )
@@ -37,12 +38,13 @@ def get(url):
         abstract = soup.find(id='pub-detail-abstract-info').get_text(strip= True )
         keyword = soup.find(id = 'pub-keywords-container').get_text(strip= True)
         statuss = soup.find_all('small')
-        status = status[len(statuss)-1].get_text(strip = True)
+        status = statuss[len(statuss)-1].get_text(strip = True)
         links_download = soup.find(id = 'pub-local-download-link').get('href')
         author = soup.find(id = 'pub-authors-container').get_text(strip=True)
         tenfile = links_download.split('/')[-1]
+        print(header_text)
         data_out(tieu_de= header_text , so_hieu= statuss, link_download= links_download , ten_file= tenfile,athor= author, date_pub=date_pub, keyword=keyword, abstract=abstract)
-        standard.append(data_out(tieu_de= header_text , so_hieu= statuss, link_download= links_download , ten_file= tenfile,athor= author, date_pub=date_pub, keyword=keyword, abstract=abstract))
+        standard.append(data_out(tieu_de= header_text , so_hieu= status, link_download= links_download , ten_file= tenfile,athor= author, date_pub=date_pub, keyword=keyword, abstract=abstract))
     return standard
 get("https://csrc.nist.gov/publications/fips")
 
