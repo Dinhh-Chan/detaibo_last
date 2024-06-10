@@ -58,7 +58,7 @@ def convert_iso_tree(arr_text):
     for elements in arr_text :
         res =""
         texts = elements.split(".")
-        tree = ""
+        tree = "ISO[RIPT]"
         for i in range(len(texts)) :
             
             tree = tree + texts[i]
@@ -226,7 +226,6 @@ def get_infor_itu(url):
     span = soup.find('span', id='ctl00_content_main_uc_rec_main_info1_rpt_main_ctl00_Label6')
     text = span.get_text(separator="\n")
     lines = text.split("\n")
-
     res = ""
     check = 0
     series = ["A", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "X", "Y", "Z"]
@@ -259,6 +258,8 @@ def get_infor_itu(url):
 
     if temp_res:
         second_res.append(temp_res)
+    for i in second_res :
+        i = "ITU[RIPT]" + i 
 
     return second_res
 def fetch_standard_from_file(file_path):

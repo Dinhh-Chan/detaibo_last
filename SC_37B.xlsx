@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40">
+  <Styles>
+    <Style ss:ID="Default" ss:Name="Normal">
+      <Alignment ss:Vertical="Bottom"/>
+      <Borders/>
+      <Font/>
+      <Interior/>
+      <NumberFormat/>
+      <Protection/>
+    </Style>
+    <Style ss:ID="s76" ss:Name="Hyperlink">
+      <Font ss:FontName="Arial" ss:Color="#0000FF" ss:Underline="Single"/>
+    </Style>
+    <Style ss:ID="s96" ss:Parent="s76">
+      <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </Borders>
+      <NumberFormat/>
+      <Protection/>
+    </Style>
+    <Style ss:ID="s24">
+      <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </Borders>
+      <Font x:Family="Swiss" ss:Bold="1"/>
+      <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+      <NumberFormat/>
+      <Protection/>
+    </Style>
+    <Style ss:ID="s25">
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </Borders>
+    </Style>
+    <Style ss:ID="s26">
+      <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </Borders>
+      <NumberFormat/>
+      <Protection/>
+    </Style>
+    <Style ss:ID="m146845920">
+      <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </Borders>
+      <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+      <NumberFormat/>
+      <Protection/>
+    </Style>
+  </Styles>
+  <Worksheet ss:Name="SC37B  Publication">
+    <Table>
+      <Column ss:StyleID="s25" ss:AutoFitWidth="0" ss:Width="100"/>
+      <Column ss:StyleID="s25" ss:AutoFitWidth="0" ss:Width="80"/>
+      <Column ss:StyleID="s25" ss:AutoFitWidth="0" ss:Width="100"/>
+      <Column ss:StyleID="s25" ss:AutoFitWidth="0" ss:Width="70"/>
+      <Column ss:StyleID="s25" ss:AutoFitWidth="0" ss:Width="150"/>
+      <Column ss:StyleID="s25" ss:AutoFitWidth="0" ss:Width="80"/>
+      <Column ss:StyleID="s25" ss:AutoFitWidth="1" ss:Width="200"/>
+      <Row>
+        <Cell ss:MergeAcross="2" ss:StyleID="m146845920">
+          <Data ss:Type="String">SC37B  publications generated on 2024-06-08</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="s24">
+          <Data ss:Type="String">Reference</Data>
+        </Cell>
+        <Cell ss:StyleID="s24">
+          <Data ss:Type="String">Edition</Data>
+        </Cell>
+        <Cell ss:StyleID="s24">
+          <Data ss:Type="String">Corrigenda/IS</Data>
+        </Cell>
+        <Cell ss:StyleID="s24">
+          <Data ss:Type="String">Date</Data>
+        </Cell>
+        <Cell ss:StyleID="s24">
+          <Data ss:Type="String">Title</Data>
+        </Cell>
+        <Cell ss:StyleID="s24">
+          <Data ss:Type="String">Language</Data>
+        </Cell>
+        <Cell ss:StyleID="s24">
+          <Data ss:Type="String">Description</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="s96" ss:HRef="https://webstore.iec.ch/publication/5691" x:HRefScreenTip="Buy IEC 61643-311:2013">
+          <Data ss:Type="String">IEC 61643-311:2013</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">Edition 2.0</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String"/>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">2013-04-11</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">Components for low-voltage surge protective devices - Part 311: Performance requirements and test circuits for gas discharge tubes (GDT)</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">EN-FR, ES</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">IEC 61643-311:2013 is applicable to gas discharge tubes (GDT) used for overvoltage protection in telecommunications, signalling and low-voltage power distribution networks with nominal system voltages up to 1 000 V (r.m.s.) a.c. and 1 500 V d.c..They are defined as a gap, or several gaps with two or three metal electrodes hermetically sealed so that gas mixture and pressure are under control. They are designed to protect apparatus or personnel, or both, from high transient voltages. This standard contains a series of test criteria, test methods and test circuits for determining the electrical characteristics of GDTs having two or three electrodes. This standard does not specify requirements applicable to complete surge protective devices, nor does it specify total requirements for GDTs employed within electronic devices, where precise coordination between GDT performance and surge protective device withstand capability is highly critical. This second edition of IEC 61643-311 cancels and replaces the first edition published in 2001. It constitutes a technical revision. Specific changes with respect to the previous edition are: Addition of performance values. Key words: gas discharge tubes (GDT), overvoltage protection in telecommunications, signalling and low-voltage power distribution networks, nominal system voltages up to 1 000 V (r.m.s.) a.c. and 1 500 V d.c.</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="s96" ss:HRef="https://webstore.iec.ch/publication/5693" x:HRefScreenTip="Buy IEC 61643-312:2013">
+          <Data ss:Type="String">IEC 61643-312:2013</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">Edition 1.0</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String"/>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">2013-04-22</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">Components for low-voltage surge protective devices - Part 312: Selection and application principles for gas discharge tubes</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">EN-FR, ES</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">IEC 61643-312:2013 is applicable to gas discharge tubes (GDT) used for overvoltage protection in telecommunications, signalling and low-voltage power distribution networks with nominal system voltages up to 1 000 V (r.m.s.) a.c. and 1 500 V d.c. They are defined as a gap, or several gaps with two or three metal electrodes hermetically sealed so that gas mixture and pressure are under control. They are designed to protect apparatus or personnel, or both, from high transient voltages. This standard provides information about the characteristics and circuit applications of GDTs having two or three electrodes. This standard does not specify requirements applicable to complete surge protective devices, nor does it specify total requirements for GDTs employed within electronic devices, where precise coordination between GDT performance and surge protective device withstand capability is highly critical. Keywords: gas discharge tubes (GDT), overvoltage protection in telecommunications, signalling and low-voltage power distribution networks, nominal system voltages up to 1 000 V (r.m.s.) a.c. and 1 500 V d.c. The contents of the corrigendum of July 2013 have been included in this copy.</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="s96" ss:HRef="https://webstore.iec.ch/publication/5692" x:HRefScreenTip="Buy IEC 61643-312:2013/COR1:2013">
+          <Data ss:Type="String">IEC 61643-312:2013/COR1:2013</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">Edition 1.0</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">1</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">2013-07-16</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">Corrigendum 1 - Components for low-voltage surge protective devices - Part 312: Selection and application principles for gas discharge tubes</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">EN-FR</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String"/>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="s96" ss:HRef="https://webstore.iec.ch/publication/5694" x:HRefScreenTip="Buy IEC 61643-321:2001">
+          <Data ss:Type="String">IEC 61643-321:2001</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">Edition 1.0</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String"/>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">2001-12-04</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">Components for low-voltage surge protective devices - Part 321: Specifications for avalanche breakdown diode (ABD)</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">EN-FR, ES</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">Is applicable to avalanche breakdown diodes (ABDs) which represent one type of surge protective device component (hereinafter referred to as SPDC) used in the design and construction of surge protective devices connected to low-voltage power distribution systems, transmission, and signalling networks. Test specifications in this standard are for single ABDs consisting of two terminals. However, multiple ABDs may be assembled within a single package defined as a diode array. Each diode within the array can be tested to this specification. This standard contains a series of test criteria for determining the electrical characteristics of the ABD. From the standard test methods described herein, the performance characteristics and ratings of the ABD can be verified or established for specific packaged designs.</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="s96" ss:HRef="https://webstore.iec.ch/publication/66706" x:HRefScreenTip="Buy IEC 61643-331:2020 RLV">
+          <Data ss:Type="String">IEC 61643-331:2020 RLV</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">Edition 3.0</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String"/>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">2020-03-19</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">Components for low-voltage surge protection - Part 331: Performance requirements and test methods for metal oxide varistors (MOV)</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">EN</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">IEC 61643-331:2020 RLV contains both the official IEC International Standard and its Redline version. The Redline version is available in English only and provides you with a quick and easy way to compare all the changes between the official IEC Standard and its previous edition.&lt;br /&gt;
+&lt;br /&gt;
+IEC 61643-331:2020 is a test specification for metal oxide varistors (MOV), which are used for applications up to 1 000 V AC or 1 500 V DC in power lines, or telecommunication, or signalling circuits. They are designed to protect apparatus or personnel, or both, from high transient voltages. This document applies to MOVs having two electrodes and hybrid surge protection components. This document also does not apply to mountings and their effect on the MOV’s characteristics. Characteristics given apply solely to the MOV mounted only in the ways described for the tests. This third edition cancels and replaces the second edition published in 2017. This edition constitutes a technical revision. This edition includes the following significant technical changes with respect to the previous edition:&lt;br /&gt;
+- a Varistor MCOV rating assurance test;&lt;br /&gt;
+- an energy rating test (2ms);&lt;br /&gt;
+- revised Dielectric strength and insulation resistance tests.</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="s96" ss:HRef="https://webstore.iec.ch/publication/63834" x:HRefScreenTip="Buy IEC 61643-331:2020">
+          <Data ss:Type="String">IEC 61643-331:2020</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">Edition 3.0</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String"/>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">2020-03-19</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">Components for low-voltage surge protection - Part 331: Performance requirements and test methods for metal oxide varistors (MOV)</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">EN-FR, EN</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">&lt;!-- NEW! --&gt;IEC 61643-331:2020 is available as &lt;a href=&quot;https://webstore.iec.ch/publication/66706&quot;&gt;IEC 61643-331:2020 RLV&lt;/a&gt; which contains the International Standard and its Redline version, showing all changes of the technical content compared to the previous edition.&lt;br /&gt;
+&lt;br /&gt;
+IEC 61643-331:2020 is a test specification for metal oxide varistors (MOV), which are used for applications up to 1 000 V AC or 1 500 V DC in power lines, or telecommunication, or signalling circuits. They are designed to protect apparatus or personnel, or both, from high transient voltages. This document applies to MOVs having two electrodes and hybrid surge protection components. This document also does not apply to mountings and their effect on the MOV’s characteristics. Characteristics given apply solely to the MOV mounted only in the ways described for the tests. This third edition cancels and replaces the second edition published in 2017. This edition constitutes a technical revision. This edition includes the following significant technical changes with respect to the previous edition:&lt;br /&gt;
+- a Varistor MCOV rating assurance test;&lt;br /&gt;
+- an energy rating test (2ms);&lt;br /&gt;
+- revised Dielectric strength and insulation resistance tests.</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="s96" ss:HRef="https://webstore.iec.ch/publication/26313" x:HRefScreenTip="Buy IEC 61643-332:2024">
+          <Data ss:Type="String">IEC 61643-332:2024</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">Edition 1.0</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String"/>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">2024-04-17</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">Components for low-voltage surge protection - Part 332: Selection and application principles for metal oxide varistors (MOV)</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">EN-FR</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">IEC 61643-332:2024 describes the theory of operation, principles for the selection and application of MOVs to be connected to power lines or telecommunication or signalling circuits, up to 1 000 V AC or 1 500 V DC. These SPCs are designed to protect apparatus or personnel, or both, from high transient voltages. This document applies to MOVs having two electrodes and voltage dependents elements with or without disconnectors. It does not apply to assemblies that include MOVs and their influence on the MOV&apos;s characteristics. This standard specifically discusses the zinc-oxide type of MOVs.</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="s96" ss:HRef="https://webstore.iec.ch/publication/28299" x:HRefScreenTip="Buy IEC 61643-341:2020">
+          <Data ss:Type="String">IEC 61643-341:2020</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">Edition 2.0</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String"/>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">2020-05-13</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">Components for low-voltage surge protection - Part 341: Performance requirements and test circuits for thyristor surge suppressors (TSS)</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">EN-FR, ES</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">IEC 61643-341:2020 specifies standard test circuits and methods for thyristor surge suppressor (TSS) components. These surge protective components, SPCs, are specially formulated thyristors designed to limit overvoltages and divert surge currents by clamping and switching actions. These SPCs are used in the construction of surge protective devices (SPDs) and equipment used in Information &amp; Communications Technologies (ICT) networks with voltages up to AC 1 000 V and DC 1 500 V. This document is applicable to gated or non-gated TSS components with third quadrant (-v and –i) characteristics of blocking, conducting or switching. This document contains information on&lt;br /&gt;
+- terminology;&lt;br /&gt;
+- letter symbols;&lt;br /&gt;
+- essential ratings and characteristics;&lt;br /&gt;
+- rating verification and characteristic measurement;&lt;br /&gt;
+This document does not apply to the conventional three-terminal thyristors as covered by IEC 60747-6. This second edition of IEC 61643-341 cancels and replaces the first edition published in 2001. This edition constitutes a technical revision.This edition includes the following significant technical changes with respect to the previous edition: Addition of performance values.</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="s96" ss:HRef="https://webstore.iec.ch/publication/26130" x:HRefScreenTip="Buy IEC 61643-351:2016">
+          <Data ss:Type="String">IEC 61643-351:2016</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">Edition 1.0</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String"/>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">2016-10-28</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">Components for low-voltage surge protective devices - Part 351: Performance requirements and test methods for telecommunications and signalling network surge isolation transformers (SIT)</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">EN-FR</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">IEC 61643-351:2016 defines test circuits and test methods for determining and verifying the SIT surge parameters. Preferred performance values for key parameters are given. Surge isolation transformers (SITs) are used for signal transformer applications with signal levels up to 400 V peak to peak. SITs are transformers, with or without an internal-winding screen, with a rated impulse withstand voltage greater than the peak voltage of the expected common-mode surge environment. SITs are applicable to components for surge protection against indirect and direct effects of lightning or other transient overvoltage. SITs are used to mitigate the onward propagation of common-mode voltage surges. This part of IEC 61643 does not cover SIT operation under differential-mode lightning surge conditions. Keywords: Surge isolation transformers (SITs)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="s96" ss:HRef="https://webstore.iec.ch/publication/30291" x:HRefScreenTip="Buy IEC 61643-352:2018">
+          <Data ss:Type="String">IEC 61643-352:2018</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">Edition 1.0</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String"/>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">2018-01-10</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">Components for low-voltage surge protection - Part 352: Selection and application principles for telecommunications and signalling network surge isolation transformers (SITs)</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">EN-FR</Data>
+        </Cell>
+        <Cell ss:StyleID="s26">
+          <Data ss:Type="String">IEC 61643-352:2018 covers the application of surge isolation transformers (SITs) that are used in telecommunication transformer applications with signal levels up to 400 V peak to peak. These transformers have a high rated impulse voltage with or without screen between the input and output windings. SITs are components for surge protection and are used to mitigate the onward propagation of common-mode voltage surges. This document describes SITs&apos; selection, application principles and related information. This document does not cover power line communication transformers.</Data>
+        </Cell>
+      </Row>
+    </Table>
+    <AutoFilter x:Range="R2C1:R2C6" xmlns="urn:schemas-microsoft-com:office:excel"/>
+    <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+      <PageSetup>
+        <Layout x:Orientation="Landscape"/>
+        <Header x:Margin="0.51181102362204722"/>
+        <Footer x:Margin="0.51181102362204722" x:Data="Page &amp;P of &amp;N"/>
+        <PageMargins x:Bottom="0.59055118110236227" x:Left="0.35433070866141736" x:Right="0.35433070866141736" x:Top="0.59055118110236227"/>
+      </PageSetup>
+      <Print>
+        <ValidPrinterInfo/>
+        <HorizontalResolution>600</HorizontalResolution>
+        <VerticalResolution>600</VerticalResolution>
+      </Print>
+      <Selected/>
+      <Panes>
+        <Pane>
+          <Number>1</Number>
+          <ActiveRow>1</ActiveRow>
+          <ActiveCol>1</ActiveCol>
+        </Pane>
+      </Panes>
+      <ProtectObjects>False</ProtectObjects>
+      <ProtectScenarios>False</ProtectScenarios>
+    </WorksheetOptions>
+  </Worksheet>
+</Workbook>
