@@ -35,7 +35,7 @@ def format_datetime(input_datetime_str):
             continue
     return input_datetime_str
 
-def data_out(duong_link = False , tac_gia = False , ten_tieng_anh=False, loai = 'kho',so_hieu=False,mo_ta= False , nam_ban_hanh= False , wki_id=False,linh_vuc= False , trang_thai = 'con_hieu_luc',  tu_khoa=False,  action_type=False, link_file=False, name_file=False):
+def data_out(trees = False , Corrigenda_IS= False ,language= False , edition = False , duong_link = False , tac_gia = False , ten_tieng_anh=False, loai = 'kho',so_hieu=False,mo_ta= False , nam_ban_hanh= False , wki_id=False,linh_vuc= False , trang_thai = 'con_hieu_luc',  tu_khoa=False,  action_type=False, link_file=False, name_file=False):
     data = {
         "ten_tieng_anh": ten_tieng_anh.strip() if ten_tieng_anh else False,
         "so_hieu": so_hieu.strip() if ten_tieng_anh else False,
@@ -50,21 +50,26 @@ def data_out(duong_link = False , tac_gia = False , ten_tieng_anh=False, loai = 
         'mo_ta':mo_ta,
         'loai':loai,
         'duong_link': duong_link, 
-        'tac_gia': tac_gia
+        'tac_gia': tac_gia, 
+        'edition': edition,
+        'language': language,
+        'Corrigenda_IS': Corrigenda_IS,
+        "tree": trees
     }
-    return data
+    return data 
 def convert_iso_tree(arr_text):
     arr_res = []
     for elements in arr_text :
         res =""
+        res1 = "ISO[RIPT]"
         texts = elements.split(".")
-        tree = "ISO[RIPT]"
+        tree = ""
         for i in range(len(texts)) :
             
             tree = tree + texts[i]
-            res = res + tree +"[RIPT]"
+            res = res + tree + "[RIPT]"
             tree = tree +"."
-        arr_res.append(res[0:-6] )
+        arr_res.append(res1 + res[0:-6] )
     return arr_res
             
             
@@ -168,7 +173,7 @@ def iso(page):
                 tree =convert_iso_tree(arr_tree)
                 data = data_out(ten_tieng_anh=title, so_hieu=number_text, trees=tree, link_file= link_sample, duong_link=link, mo_ta=description_text)
                 standard.append(data)
-        return standard
+                return standard
         
             
 
