@@ -131,43 +131,44 @@ def iso(page):
             soup = BeautifulSoup(response.content, 'html.parser')
             div_link = soup.find_all('div', class_= "fw-semibold")
             for div in div_link :
-                link_standard.append('https://www.iso.org/'+div.find('a').get('href'))
-            response = requests.get(link)
-            soup = BeautifulSoup(response.content, 'html.parser')
+                link_standard.append('https://www.iso.org'+div.find('a').get('href'))
+            for link in link_standard:
+                response = requests.get(link)
+                soup = BeautifulSoup(response.content, 'html.parser')
 
-            description = soup.find('div', itemprop='description')
-            if description:
-                description_text = description.get_text(strip=True)
-            else:
-                description_text = 'N/A'
+                description = soup.find('div', itemprop='description')
+                if description:
+                    description_text = description.get_text(strip=True)
+                else:
+                    description_text = 'N/A'
 
-            number = soup.find('span', class_='d-flex justify-content-between align-items-start')
-            if number:
-                inspan = number.find('span', class_='d-block mb-3')
-                if inspan:
-                    number_text = inspan.get_text(strip=True)
+                number = soup.find('span', class_='d-flex justify-content-between align-items-start')
+                if number:
+                    inspan = number.find('span', class_='d-block mb-3')
+                    if inspan:
+                        number_text = inspan.get_text(strip=True)
+                    else:
+                        number_text = 'N/A'
                 else:
                     number_text = 'N/A'
-            else:
-                number_text = 'N/A'
-            title_span = soup.find('span', class_ = "lead d-block mb-3")
-            if title_span :
-                title = title_span.get_text(strip=True )
-            else :
-                title = "N/A"
-            link_sample = soup.find('a', class_='btn btn-sm btn-light')
-            if link_sample:
-                link_sample = link_sample.get('href')
-            else:
-                link_sample = 'N/A'
-            span_tag= soup.find_all('span', class_= 'entry-name entry-block')
-            arr_tree= []
-            for span in range(1,len(span_tag)):
-                arr_tree.append(span_tag[span].get_text(strip = True ))
-            tree =convert_iso_tree(arr_tree)
-            data = data_out(ten_tieng_anh=title, so_hieu=number_text, trees=tree, link_file= link_sample, duong_link=link, mo_ta=description_text)
-            standard.append(data)
-            return standard
+                title_span = soup.find('span', class_ = "lead d-block mb-3")
+                if title_span :
+                    title = title_span.get_text(strip=True )
+                else :
+                    title = "N/A"
+                link_sample = soup.find('a', class_='btn btn-sm btn-light')
+                if link_sample:
+                    link_sample = link_sample.get('href')
+                else:
+                    link_sample = 'N/A'
+                span_tag= soup.find_all('span', class_= 'entry-name entry-block')
+                arr_tree= []
+                for span in range(1,len(span_tag)):
+                    arr_tree.append(span_tag[span].get_text(strip = True ))
+                tree =convert_iso_tree(arr_tree)
+                data = data_out(ten_tieng_anh=title, so_hieu=number_text, trees=tree, link_file= link_sample, duong_link=link, mo_ta=description_text)
+                standard.append(data)
+        return standard
         
             
 
